@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bog'lanish — KATLAVAN.UZ</title>
+  <meta name="description" content="KATLAVAN.UZ bilan bog'lanish: telefon raqamlar, Telegram bot, Instagram, YouTube, Telegram kanal hamda xarita.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container flex-between">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.svg" alt="KATLAVAN.UZ" class="brand-logo-img">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+        <li><a href="about.html" class="nav-link">Biz haqimizda</a></li>
+        <li><a href="services.html" class="nav-link">Xizmatlar</a></li>
+        <li><a href="machinery.html" class="nav-link">Texnikalar</a></li>
+        <li><a href="projects.html" class="nav-link">Obyektlar</a></li>
+        <li><a href="gallery.html" class="nav-link">Galereya</a></li>
+      </ul>
+
+      <div class="flex" style="gap: 12px;">
+        <a href="contact.html" class="btn btn-primary">
+          <i class="fa-solid fa-phone"></i> Bog'lanish
+        </a>
+        <div class="mobile-toggle"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="section bg-accent" style="padding: 50px 0;">
+    <div class="container text-center">
+      <span class="badge-teal">Aloqa</span>
+      <h1 class="section-title">Biz Bilan Bog'laning</h1>
+      <p class="section-subtitle">Savol va buyurtmalaringiz uchun 24/7 aloqadamiz</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Contact Details Card -->
+        <div class="contact-info-card">
+          <h3>Aloqa Ma'lumotlari</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Telefon Raqamlar</div>
+              <div class="contact-val"><a href="tel:+998977529999">+998 97 752 99 99</a></div>
+              <div class="contact-val"><a href="tel:+998337529999">+998 33 752 99 99</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-paper-plane"></i></div>
+            <div>
+              <div class="contact-label">Telegram Bot</div>
+              <div class="contact-val"><a href="https://t.me/katlavann_uz" target="_blank">@katlavann_uz</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div>
+              <div class="contact-label">Instagram</div>
+              <div class="contact-val"><a href="https://instagram.com/katlavann_uz" target="_blank">@katlavann_uz</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div>
+              <div class="contact-label">YouTube</div>
+              <div class="contact-val"><a href="https://youtube.com/@katlavan_uz" target="_blank">@katlavan_uz</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-telegram"></i></div>
+            <div>
+              <div class="contact-label">Telegram Kanal & Guruh</div>
+              <div class="contact-val"><a href="https://t.me/katlavann_uz" target="_blank">@katlavann_uz (Kanal)</a></div>
+              <div class="contact-val"><a href="https://t.me/katlavan_uz_toshkent" target="_blank">@katlavan_uz_toshkent (Guruh)</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; margin-bottom: 20px;">Xabar Yuborish</h3>
+          
+          <form id="mainContactForm">
+            <div class="form-group">
+              <label class="form-label">Ismingiz</label>
+              <input type="text" class="form-control" placeholder="Masalan: Alisher Vohidov" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Telefon Raqamingiz</label>
+              <input type="tel" class="form-control" placeholder="+998 90 123 45 67" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Xizmat Turi</label>
+              <select class="form-control">
+                <option>Katlavan qazish</option>
+                <option>Poydevor qazish</option>
+                <option>Yer tekislash</option>
+                <option>Tuproq tashish</option>
+                <option>Ekskavator ijarasi</option>
+                <option>Boshqa masala</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Xabaringiz / Obyekt tafsiloti</label>
+              <textarea class="form-control" rows="3" placeholder="Obyekt joylashuvi va ish hajmi haqida qisqacha yozing..."></textarea>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <button type="button" class="btn btn-outline btn-get-geo" style="width:100%; justify-content:center; font-size:0.88rem; gap:8px; border-color:var(--primary); color:var(--primary); padding: 10px;">
+                <i class="fa-solid fa-location-dot"></i> <span>📍 Google Maps Lokatsiyamni birga yuborish</span>
+              </button>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              Yuborish <i class="fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- GOOGLE MAP PLACEHOLDER -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50264024357!2d69.13928236777641!3d41.28251254388439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e95f%3A0x4a014eb7577a2757!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <img src="images/logo.svg" alt="KATLAVAN.UZ" class="brand-logo-img-footer">
+          </a>
+          <p>O'zbekiston bo'ylab professional yer qazish, poydevor tayyorlash va maxsus texnikalar ijarasi bo'yicha 1-raqamli kompaniya.</p>
+          <div class="footer-socials">
+            <a href="https://t.me/katlavann_uz" target="_blank" class="telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://instagram.com/katlavann_uz" target="_blank" class="instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@katlavan_uz" target="_blank" class="youtube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigatsiya</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="services.html">Xizmatlar</a></li>
+            <li><a href="machinery.html">Texnikalar</a></li>
+            <li><a href="projects.html">Obyektlar</a></li>
+            <li><a href="gallery.html">Galereya</a></li>
+            <li><a href="contact.html">Bog'lanish</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Bog'lanish</h4>
+          <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fa-solid fa-phone" style="color: var(--primary);"></i> +998 97 752 99 99</p>
+          <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fa-solid fa-phone" style="color: var(--primary);"></i> +998 33 752 99 99</p>
+          <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fa-paper-plane" style="color: var(--primary);"></i> @katlavann_uz</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 KATLAVAN.UZ. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS & MODALS -->
+  <div class="floating-actions">
+    <a href="https://t.me/katlavann_uz" target="_blank" class="float-btn telegram" title="Telegram Bot"><i class="fa-paper-plane"></i></a>
+    <a href="tel:+998977529999" class="float-btn phone" title="Qo'ng'iroq qilish"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <div id="orderModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Buyurtma Rasmiylashtirish</h3>
+        <i class="fa-solid fa-xmark modal-close"></i>
+      </div>
+      <div class="modal-body">
+        <form id="modalOrderForm">
+          <div class="form-group">
+            <label class="form-label">Ismingiz</label>
+            <input type="text" class="form-control" placeholder="Ismingizni kiriting" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Telefon Raqamingiz</label>
+            <input type="tel" class="form-control" placeholder="+998 90 123 45 67" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 16px;">
+            <button type="button" id="getGeoBtn" class="btn btn-outline" style="width:100%; justify-content:center; font-size:0.88rem; gap:8px; border-color:var(--primary); color:var(--primary); padding: 10px;">
+              <i class="fa-solid fa-location-dot"></i> <span>📍 Google Maps Lokatsiyamni birga yuborish</span>
+            </button>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Buyurtmani Tasdiqlash</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal-backdrop">
+    <div class="modal-card" style="max-width: 850px; padding: 0; background: transparent; box-shadow: none; position: relative;">
+      <button class="modal-close" aria-label="Yopish" style="position: absolute; top: -45px; right: 0; background: rgba(0,0,0,0.7); color: #FFF; border: 1px solid rgba(255,255,255,0.2); font-size: 1.5rem; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10;">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="videoModalContainer" style="position: relative; background: #000; overflow: hidden; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);"></div>
+    </div>
+  </div>
+
+  <div id="toastNotification" class="toast">
+    <i class="fa-solid fa-circle-check" style="color: var(--primary); font-size: 1.5rem;"></i>
+    <span id="toastMessage">Xabaringiz muvaffaqiyatli yuborildi!</span>
+  </div>
+
+  <!-- FLOATING LIVE TELEGRAM & PHONE CONTACT WIDGET -->
+  <div class="floating-contact-widget" id="floatingContactWidget">
+    <div class="floating-contact-menu">
+      <div style="font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; padding: 0 4px;">
+        <i class="fa-solid fa-headset" style="color: var(--primary);"></i> Tezkor Aloqa
+      </div>
+
+      <a href="https://t.me/katlavann_uz" target="_blank" rel="noopener" class="floating-contact-link telegram">
+        <div class="link-icon" style="background: rgba(0, 136, 204, 0.3); color: #38BDF8;">
+          <i class="fa-brands fa-telegram"></i>
+        </div>
+        <div>
+          <span style="display: block; font-size: 0.88rem; font-weight: 700;">Telegram-dan Yozish</span>
+          <span style="display: block; font-size: 0.75rem; color: rgba(255,255,255,0.7); font-weight: 500;">@katlavann_uz</span>
+        </div>
+      </a>
+
+      <a href="tel:+998977529999" class="floating-contact-link">
+        <div class="link-icon" style="background: rgba(16, 185, 129, 0.3); color: #34D399;">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div>
+          <span style="display: block; font-size: 0.88rem; font-weight: 700;">+998 97 752 99 99</span>
+          <span style="display: block; font-size: 0.75rem; color: rgba(255,255,255,0.7); font-weight: 500;">Asosiy Linya</span>
+        </div>
+      </a>
+
+      <a href="tel:+998337529999" class="floating-contact-link">
+        <div class="link-icon" style="background: rgba(245, 158, 11, 0.3); color: #FBBF24;">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <div>
+          <span style="display: block; font-size: 0.88rem; font-weight: 700;">+998 33 752 99 99</span>
+          <span style="display: block; font-size: 0.75rem; color: rgba(255,255,255,0.7); font-weight: 500;">Navbatchi Linya</span>
+        </div>
+      </a>
+
+      <button class="floating-contact-link open-order-modal" data-item="Jonli Vidget Buyurtma" style="background: var(--primary); border: none; cursor: pointer; justify-content: center; text-align: center;">
+        <i class="fa-solid fa-paper-plane"></i> Buyurtma Yuborish
+      </button>
+    </div>
+
+    <button class="floating-main-btn" id="toggleContactWidget" title="Aloqaga chiqish">
+      <i class="fa-solid fa-comment-dots" id="contactWidgetIcon"></i>
+    </button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

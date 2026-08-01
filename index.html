@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KATLAVAN.UZ — Professional Yer Qazish Va Maxsus Texnikalar Xizmati</title>
+  <meta name="description" content="O'zbekiston bo'ylab katlavan qazish, poydevor tayyorlash, yer tekislash, tuproq tashish va Kobelco, CAT, Hyundai ekskavatorlar ijarasi.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container flex-between">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.svg" alt="KATLAVAN.UZ" class="brand-logo-img">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Bosh sahifa</a></li>
+        <li><a href="about.html" class="nav-link">Biz haqimizda</a></li>
+        <li><a href="services.html" class="nav-link">Xizmatlar</a></li>
+        <li><a href="machinery.html" class="nav-link">Texnikalar</a></li>
+        <li><a href="projects.html" class="nav-link">Obyektlar</a></li>
+        <li><a href="gallery.html" class="nav-link">Galereya</a></li>
+      </ul>
+
+      <div class="flex" style="gap: 12px;">
+        <a href="contact.html" class="btn btn-primary">
+          <i class="fa-solid fa-phone"></i> Bog'lanish
+        </a>
+        <div class="mobile-toggle"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION WITH FULL VIDEO BACKGROUND -->
+  <section class="hero hero-video-bg-section" style="position: relative; min-height: 85vh; padding: 100px 0 90px; color: #FFFFFF; display: flex; align-items: center; overflow: hidden; background: #0F172A;">
+    
+    <!-- Background Video Element -->
+    <video id="heroBgVideo" src="obektlar/kumishkon.mp4" autoplay loop muted playsinline poster="images/hero_kobelco.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; object-fit: cover; z-index: 1; transition: transform 0.1s linear, opacity 0.5s ease;"></video>
+    
+    <!-- Dark Gradient Overlay for High Readability -->
+    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.72) 50%, rgba(15, 23, 42, 0.86) 100%); z-index: 2;"></div>
+
+    <div class="container hero-grid" style="position: relative; z-index: 3; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; width: 100%;">
+      
+      <!-- Left Content Column -->
+      <div class="hero-content">
+        <div class="hero-badge-box">
+          <span class="badge-teal" style="background: rgba(15, 167, 166, 0.25); color: #2DD4BF; border: 1px solid rgba(45, 212, 191, 0.4); padding: 8px 18px; border-radius: 30px; font-weight: 700; font-size: 0.9rem;">
+            <i class="fa-solid fa-shield-halved"></i> O'ZBEKISTON N1 KATLAVAN &amp; POYDEVOR
+          </span>
+        </div>
+
+        <h1 class="hero-title" style="color: #FFFFFF; font-size: 3.5rem; font-weight: 900; line-height: 1.12; margin-bottom: 20px; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          O'zbekiston bo'ylab <span class="accent" style="color: var(--primary); background: linear-gradient(135deg, #F59E0B 0%, #2DD4BF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">professional</span> yer qazish va maxsus texnikalar xizmati.
+        </h1>
+
+        <p class="hero-desc" style="color: rgba(255, 255, 255, 0.88); font-size: 1.2rem; line-height: 1.7; margin-bottom: 32px; font-weight: 500;">
+          Zamonaviy Kobelco, CAT, Hyundai va Komatsu texnikalari parki bilan har qanday murakkablikdagi katlavan va poydevor ishlarini kafolatli va o'z vaqtida bajaramiz.
+        </p>
+
+        <div class="hero-actions" style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <button class="btn btn-primary btn-lg open-order-modal" data-item="Hero Buyurtma" style="font-size: 1.1rem; padding: 16px 32px; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);">
+            <i class="fa-solid fa-phone"></i> Buyurtma berish <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <a href="projects.html" class="btn btn-outline btn-lg" style="color: #FFFFFF; border-color: rgba(255,255,255,0.4); font-size: 1.1rem; padding: 16px 28px; backdrop-filter: blur(8px);">
+            <i class="fa-solid fa-film"></i> Obyektlarni ko'rish
+          </a>
+        </div>
+
+        <!-- Minimalist Video Playlist Switcher -->
+        <div style="margin-top: 30px; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.14); padding: 12px 18px; border-radius: 16px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+            <span style="font-size: 0.84rem; color: rgba(255, 255, 255, 0.85); font-weight: 700; display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-play" style="color: var(--primary); font-size: 0.75rem;"></i> Avto Video Karusel:
+            </span>
+            <span style="font-size: 0.75rem; color: #2DD4BF; font-weight: 600; display: flex; align-items: center; gap: 4px;">
+              <i class="fa-solid fa-rotate"></i> (6 sek)
+            </span>
+          </div>
+          
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="hero-video-switcher active" data-video="obektlar/kumishkon.mp4" style="background: var(--primary); color: #FFF; border: none; padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">01</button>
+            <button class="hero-video-switcher" data-video="obektlar/bektemir.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">02</button>
+            <button class="hero-video-switcher" data-video="obektlar/kokcha.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">03</button>
+            <button class="hero-video-switcher" data-video="obektlar/oq tepa.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">04</button>
+            <button class="hero-video-switcher" data-video="obektlar/ozbefilim.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">05</button>
+            <button class="hero-video-switcher" data-video="obektlar/sergili.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">06</button>
+            <button class="hero-video-switcher" data-video="videos/kirish.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">07</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Glass Card with Stats & Sound Button -->
+      <div class="hero-media" style="position: relative;">
+        <div style="background: rgba(15, 23, 42, 0.65); backdrop-filter: blur(16px); border: 2px solid rgba(255, 255, 255, 0.15); border-radius: 24px; padding: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+          
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+            <span style="font-size: 0.9rem; font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #10B981; display: inline-block; box-shadow: 0 0 10px #10B981;"></span> LIVE 24/7 KATLAVAN
+            </span>
+            
+            <button id="toggleHeroAudio" style="background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2); color: #FFF; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;" title="Ovozni yoqish / o'chirish">
+              <i class="fa-solid fa-volume-xmark" id="heroAudioIcon"></i>
+            </button>
+          </div>
+
+          <div style="border-radius: 16px; overflow: hidden; height: 220px; position: relative; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.15);">
+            <video id="heroMiniPreview" src="obektlar/kumishkon.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;"></video>
+            <div class="open-video-modal" data-title="Kumushkon Obyekti" data-video="obektlar/kumishkon.mp4" style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+              <div style="width: 54px; height: 54px; border-radius: 50%; background: var(--primary); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 8px 25px rgba(245, 158, 11, 0.6);">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div style="background: rgba(255,255,255,0.06); padding: 14px; border-radius: 12px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">
+              <strong style="display: block; font-size: 1.5rem; color: var(--primary); font-weight: 800;">1000+</strong>
+              <span style="font-size: 0.78rem; color: rgba(255,255,255,0.75);">Obyektlar</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); padding: 14px; border-radius: 12px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">
+              <strong style="display: block; font-size: 1.5rem; color: var(--primary); font-weight: 800;">120+</strong>
+              <span style="font-size: 0.78rem; color: rgba(255,255,255,0.75);">Texnikalar</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ANIMATED STATISTICS BAR -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" data-target="1000">0+</div>
+        <div class="stat-label">Bajarilgan obyektlar</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="120">0+</div>
+        <div class="stat-label">Maxsus texnikalar</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="font-size: 1.15rem; color: var(--primary); font-weight: 800; display: inline-flex; align-items: center; justify-content: center; gap: 6px;"><i class="fa-solid fa-clock"></i> Yaqinda qo'shiladi</div>
+        <div class="stat-label">Mutaxassis operatorlar</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="10">0+</div>
+        <div class="stat-label">Yillik tajriba</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SERVICES PREVIEW -->
+  <section class="section bg-accent">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-teal">Bizning xizmatlar</span>
+        <h2 class="section-title">Professional Yer va Qazish Xizmatlari</h2>
+        <p class="section-subtitle">Sanoat va fuqarolik qurilish obyektlari uchun kompleks tayyorlov ishlari</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="custom-card">
+          <div class="card-img-wrap">
+            <img src="images/drone_excavation.jpg" alt="Katlavan qazish">
+            <span class="card-badge">Asosiy</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Katlavan qazish</h3>
+            <p class="card-text">Katta hajmdagi ko'p qavatli bino va majmualar uchun chuqur katlavanlar qazish va gruntni olib chiqib ketish.</p>
+            <ul class="card-advantages">
+              <li><i class="fa-solid fa-circle-check"></i> Har qanday chuqurlikdagi katlavan</li>
+              <li><i class="fa-solid fa-circle-check"></i> Yuqori aniqlikdagi geodeziya</li>
+              <li><i class="fa-solid fa-gift" style="color: var(--primary);"></i> <strong>Vodovoz xizmati BEPUL</strong> (Katlavan tugagach)</li>
+            </ul>
+            <button class="btn btn-teal-outline open-order-modal" data-item="Katlavan Qazish (Vodovoz Tekin)">Buyurtma berish</button>
+          </div>
+        </div>
+
+        <div class="custom-card">
+          <div class="card-img-wrap">
+            <img src="images/hero_kobelco.jpg" alt="Poydevor qazish">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Poydevor qazish</h3>
+            <p class="card-text">Bino va inshootlar poydevori uchun aniq o'lchamdagi ariq va chuqurliklar qazish va tekislash.</p>
+            <ul class="card-advantages">
+              <li><i class="fa-solid fa-circle-check"></i> Lenta va plita poydevorlar</li>
+              <li><i class="fa-solid fa-circle-check"></i> Tezkor va kafolatli ish</li>
+            </ul>
+            <button class="btn btn-teal-outline open-order-modal" data-item="Poydevor Qazish">Buyurtma berish</button>
+          </div>
+        </div>
+
+        <div class="custom-card">
+          <div class="card-img-wrap">
+            <img src="images/machinery_fleet.jpg" alt="Yer tekislash">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Yer tekislash</h3>
+            <p class="card-text">Qurilish maydonlarini buldozer va greyderlar yordamida tekislash va gruntni zichlash.</p>
+            <ul class="card-advantages">
+              <li><i class="fa-solid fa-circle-check"></i> Buldozer va greyder xizmati</li>
+              <li><i class="fa-solid fa-circle-check"></i> Relyefni ideal tayyorlash</li>
+            </ul>
+            <button class="btn btn-teal-outline open-order-modal" data-item="Yer Tekislash">Buyurtma berish</button>
+          </div>
+        </div>
+
+        <div class="custom-card">
+          <div class="card-img-wrap">
+            <img src="images/drone_excavation.jpg" alt="Tuproq tashish">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Tuproq tashish</h3>
+            <p class="card-text">Qazilgan tuproq va qurilish chiqindilarini og'ir samasvallar autoparki bilan tezkor tashish.</p>
+            <ul class="card-advantages">
+              <li><i class="fa-solid fa-circle-check"></i> 25-40 tonnalik samasvallar</li>
+              <li><i class="fa-solid fa-circle-check"></i> Uzluksiz logistika</li>
+            </ul>
+            <button class="btn btn-teal-outline open-order-modal" data-item="Tuproq Tashish">Buyurtma berish</button>
+          </div>
+        </div>
+
+        <div class="custom-card">
+          <div class="card-img-wrap">
+            <img src="images/machinery_fleet.jpg" alt="Ekskavator ijarasi">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ekskavator ijarasi</h3>
+            <p class="card-text">Kobelco, CAT, Hyundai g'ildirakli va gusenitsali ekskavatorlarini tajribali operatorlar bilan ijara berish.</p>
+            <ul class="card-advantages">
+              <li><i class="fa-solid fa-circle-check"></i> Tajribali operator bilan</li>
+              <li><i class="fa-solid fa-circle-check"></i> Kunlik va oylik shartnoma</li>
+            </ul>
+            <button class="btn btn-teal-outline open-order-modal" data-item="Ekskavator Ijarasi">Buyurtma berish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST PROJECTS PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-teal">Obyektlarimiz</span>
+        <h2 class="section-title">Oxirgi Bajarilgan Loyihalar</h2>
+        <p class="section-subtitle">O'zbekistonning turli hududlaridagi yirik qurilish obyektlari</p>
+      </div>
+
+      <div class="card-grid">
+        <!-- 1. Kumushkon Obyekti -->
+        <a href="projects.html" class="custom-card" style="text-decoration:none; color:inherit;">
+          <div class="card-img-wrap" style="height: 240px; position: relative;">
+            <video src="obektlar/kumishkon.mp4" muted loop playsinline preload="auto"></video>
+            <span class="card-badge"><i class="fa-solid fa-location-dot"></i> Kumushkon</span>
+            <div class="video-overlay-play">
+              <div class="video-play-pulse-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kumushkon Obyekti</h3>
+            <p class="card-text">Kumushkon tog'li hududida qattiq gruntlar va toshli zonalarni qazish hamda tekislash amaliyoti.</p>
+            <span style="color: var(--primary); font-weight: 700; font-size: 0.9rem;">Batafsil ko'rish <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 2. Bektemir Obyekti -->
+        <a href="projects.html" class="custom-card" style="text-decoration:none; color:inherit;">
+          <div class="card-img-wrap" style="height: 240px; position: relative;">
+            <video src="obektlar/bektemir.mp4" muted loop playsinline preload="auto"></video>
+            <span class="card-badge"><i class="fa-solid fa-location-dot"></i> Bektemir</span>
+            <div class="video-overlay-play">
+              <div class="video-play-pulse-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Bektemir Obyekti</h3>
+            <p class="card-text">Bektemir tumanidagi yirik katlavan qazish, poydevor o'rni tayyorlash va tuproq tashish ishlari.</p>
+            <span style="color: var(--primary); font-weight: 700; font-size: 0.9rem;">Batafsil ko'rish <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 3. Sergeli Obyekti -->
+        <a href="projects.html" class="custom-card" style="text-decoration:none; color:inherit;">
+          <div class="card-img-wrap" style="height: 240px; position: relative;">
+            <video src="obektlar/sergili.mp4" muted loop playsinline preload="auto"></video>
+            <span class="card-badge"><i class="fa-solid fa-location-dot"></i> Sergeli</span>
+            <div class="video-overlay-play">
+              <div class="video-play-pulse-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sergeli Obyekti</h3>
+            <p class="card-text">Sergeli tumanidagi yirik turar joy majmuasi uchun katta hajmli katlavan va poydevor ishlari.</p>
+            <span style="color: var(--primary); font-weight: 700; font-size: 0.9rem;">Batafsil ko'rish <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="projects.html" class="btn btn-primary">
+          Barcha Obyektlarni Ko'rish <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section container">
+    <div class="cta-banner">
+      <h2 class="cta-title">Qurilish Obyektingiz Uchun Texnika Kerakmi?</h2>
+      <p class="cta-desc">Hoziroq biz bilan bog'laning va professional mutaxassislardan bepul konsultatsiya hamda eng maqbul narxlarni oling.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:+998977529999" class="btn btn-primary btn-lg"><i class="fa-solid fa-phone"></i> +998 97 752 99 99</a>
+        <button class="btn btn-outline btn-lg open-order-modal" style="color: #FFF; border-color: rgba(255,255,255,0.3);" data-item="CTA Banner">Buyurtma Berish</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <img src="images/logo.svg" alt="KATLAVAN.UZ" class="brand-logo-img-footer">
+          </a>
+          <p>O'zbekiston bo'ylab professional yer qazish, poydevor tayyorlash va maxsus texnikalar ijarasi bo'yicha 1-raqamli kompaniya.</p>
+          <div class="footer-socials">
+            <a href="https://t.me/katlavann_uz" target="_blank" class="telegram" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://instagram.com/katlavann_uz" target="_blank" class="instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@katlavan_uz" target="_blank" class="youtube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigatsiya</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="services.html">Xizmatlar</a></li>
+            <li><a href="machinery.html">Texnikalar</a></li>
+            <li><a href="projects.html">Obyektlar</a></li>
+            <li><a href="gallery.html">Galereya</a></li>
+            <li><a href="contact.html">Bog'lanish</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Xizmatlar</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Katlavan qazish</a></li>
+            <li><a href="services.html">Poydevor qazish</a></li>
+            <li><a href="services.html">Yer tekislash</a></li>
+            <li><a href="services.html">Tuproq tashish</a></li>
+            <li><a href="services.html">Ekskavator ijarasi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Bog'lanish</h4>
+          <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fa-solid fa-phone" style="color: var(--primary);"></i> +998 97 752 99 99</p>
+          <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fa-solid fa-phone" style="color: var(--primary);"></i> +998 33 752 99 99</p>
+          <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fa-paper-plane" style="color: var(--primary);"></i> @katlavann_uz</p>
+          <p style="color: rgba(255,255,255,0.7);"><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> Toshkent shahri, Yashnabod tumani</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 KATLAVAN.UZ. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS & MODALS -->
+  <div class="floating-actions">
+    <a href="https://t.me/katlavann_uz" target="_blank" class="float-btn telegram" title="Telegram Bot"><i class="fa-paper-plane"></i></a>
+    <a href="tel:+998977529999" class="float-btn phone" title="Qo'ng'iroq qilish"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <div id="orderModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Buyurtma Rasmiylashtirish</h3>
+        <i class="fa-solid fa-xmark modal-close"></i>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 16px; color: var(--secondary-muted);">
+          Tanlangan xizmat / texnika: <strong id="orderModalItemName" style="color: var(--primary);">Katlavan Qazish</strong>
+        </p>
+
+        <form id="modalOrderForm">
+          <div class="form-group">
+            <label class="form-label">Ismingiz</label>
+            <input type="text" class="form-control" placeholder="Ismingizni kiriting" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Telefon Raqamingiz</label>
+            <input type="tel" class="form-control" placeholder="+998 90 123 45 67" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Obyekt Joylashuvi</label>
+            <input type="text" class="form-control" placeholder="Masalan: Toshkent, Chilonzor">
+          </div>
+          <div class="form-group" style="margin-bottom: 16px;">
+            <button type="button" id="getGeoBtn" class="btn btn-outline" style="width:100%; justify-content:center; font-size:0.88rem; gap:8px; border-color:var(--primary); color:var(--primary); padding: 10px;">
+              <i class="fa-solid fa-location-dot"></i> <span>📍 Google Maps Lokatsiyamni birga yuborish</span>
+            </button>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Buyurtmani Tasdiqlash</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal-backdrop">
+    <div class="modal-card" style="max-width: 850px; padding: 0; background: transparent; box-shadow: none; position: relative;">
+      <button class="modal-close" aria-label="Yopish" style="position: absolute; top: -45px; right: 0; background: rgba(0,0,0,0.7); color: #FFF; border: 1px solid rgba(255,255,255,0.2); font-size: 1.5rem; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10;">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="videoModalContainer" style="position: relative; background: #000; overflow: hidden; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);"></div>
+    </div>
+  </div>
+
+  <div id="lightboxModal" class="modal-backdrop">
+    <div class="modal-card" style="max-width: 900px; background: transparent; box-shadow: none;">
+      <div style="text-align: right; padding: 10px;">
+        <i class="fa-solid fa-xmark modal-close" style="color: #FFF; font-size: 2rem;"></i>
+      </div>
+      <img id="lightboxImg" src="" alt="Zoom Image" style="width:100%; border-radius: 18px; box-shadow: var(--shadow-lg);">
+    </div>
+  </div>
+
+  <div id="toastNotification" class="toast">
+    <i class="fa-solid fa-circle-check" style="color: var(--primary); font-size: 1.5rem;"></i>
+    <span id="toastMessage">Xabaringiz muvaffaqiyatli yuborildi!</span>
+  </div>
+
+  <!-- FLOATING LIVE TELEGRAM & PHONE CONTACT WIDGET -->
+  <div class="floating-contact-widget" id="floatingContactWidget">
+    <div class="floating-contact-menu">
+      <div style="font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; padding: 0 4px;">
+        <i class="fa-solid fa-headset" style="color: var(--primary);"></i> Tezkor Aloqa
+      </div>
+
+      <a href="https://t.me/katlavann_uz" target="_blank" rel="noopener" class="floating-contact-link telegram">
+        <div class="link-icon" style="background: rgba(0, 136, 204, 0.3); color: #38BDF8;">
+          <i class="fa-brands fa-telegram"></i>
+        </div>
+        <div>
+          <span style="display: block; font-size: 0.88rem; font-weight: 700;">Telegram-dan Yozish</span>
+          <span style="display: block; font-size: 0.75rem; color: rgba(255,255,255,0.7); font-weight: 500;">@katlavann_uz</span>
+        </div>
+      </a>
+
+      <a href="tel:+998977529999" class="floating-contact-link">
+        <div class="link-icon" style="background: rgba(16, 185, 129, 0.3); color: #34D399;">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div>
+          <span style="display: block; font-size: 0.88rem; font-weight: 700;">+998 97 752 99 99</span>
+          <span style="display: block; font-size: 0.75rem; color: rgba(255,255,255,0.7); font-weight: 500;">Asosiy Linya</span>
+        </div>
+      </a>
+
+      <a href="tel:+998337529999" class="floating-contact-link">
+        <div class="link-icon" style="background: rgba(245, 158, 11, 0.3); color: #FBBF24;">
+          <i class="fa-solid fa-phone-volume"></i>
+        </div>
+        <div>
+          <span style="display: block; font-size: 0.88rem; font-weight: 700;">+998 33 752 99 99</span>
+          <span style="display: block; font-size: 0.75rem; color: rgba(255,255,255,0.7); font-weight: 500;">Navbatchi Linya</span>
+        </div>
+      </a>
+
+      <button class="floating-contact-link open-order-modal" data-item="Bosh Sahifa" style="background: var(--primary); border: none; cursor: pointer; justify-content: center; text-align: center;">
+        <i class="fa-solid fa-paper-plane"></i> Buyurtma Yuborish
+      </button>
+    </div>
+
+    <button class="floating-main-btn" id="toggleContactWidget" title="Aloqaga chiqish">
+      <i class="fa-solid fa-comment-dots" id="contactWidgetIcon"></i>
+    </button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
