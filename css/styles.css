@@ -2058,6 +2058,22 @@ button {
 
 
 
+/* GPU HARDWARE ACCELERATION & LIGHTNING RENDERING FOR ALL MEDIA */
+img, video {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-img-wrap,
+.featured-project-img-box,
+.custom-card,
+.machine-card-item,
+.gallery-item-wrap {
+  content-visibility: auto;
+  contain-intrinsic-size: 240px;
+}
+
 /* OBYEKTLAR VIDEO CARDS & PREVIEWS */
 .card-img-wrap,
 .featured-project-img-box {

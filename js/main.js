@@ -24,19 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactWidget();
 });
 
-/* Video Scroll Auto-Play & Hover Preview Engine */
+/* Video Scroll Auto-Play & Instant Buffering Engine */
 function initVideoHoverPreviews() {
   const videoObserverOptions = {
     root: null,
-    rootMargin: '120px 0px 120px 0px', // start auto-playing slightly before scrolling into view
-    threshold: 0.05
+    rootMargin: '300px 0px 300px 0px', // start buffering and playing 300px before scrolling into view
+    threshold: 0.01
   };
 
   const videoObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       const video = entry.target;
-      // Skip hero background video or video inside modal
-      if (video.id === 'heroBgVideo' || video.id === 'aboutBgVideo' || video.closest('#videoModal')) return;
+      if (video.id === 'heroBgVideo' || video.id === 'aboutBgVideo' || video.id === 'servicesBgVideo' || video.closest('#videoModal')) return;
 
       if (entry.isIntersecting) {
         video.muted = true;
@@ -49,9 +48,7 @@ function initVideoHoverPreviews() {
             video.classList.add('is-playing');
             const parent = video.closest('.gallery-item, .project-card, .custom-card, .featured-project-card, .featured-project-img-box, .card-img-wrap');
             if (parent) parent.classList.add('video-active');
-          }).catch(() => {
-            // Autoplay prevented by browser, graceful fallback
-          });
+          }).catch(() => {});
         }
       } else {
         video.pause();
@@ -63,7 +60,7 @@ function initVideoHoverPreviews() {
   }, videoObserverOptions);
 
   document.querySelectorAll('video').forEach(video => {
-    if (video.id !== 'heroBgVideo' && video.id !== 'aboutBgVideo' && !video.closest('#videoModal')) {
+    if (video.id !== 'heroBgVideo' && video.id !== 'aboutBgVideo' && video.id !== 'servicesBgVideo' && !video.closest('#videoModal')) {
       video.muted = true;
       video.playsInline = true;
       video.loop = true;
@@ -75,20 +72,28 @@ function initVideoHoverPreviews() {
       videoObserver.observe(video);
     }
 
-    // Mouse hover boost handler
     const parent = video.closest('.gallery-item, .project-card, .custom-card, .featured-project-card, .featured-project-img-box, .card-img-wrap');
     if (parent) {
       parent.addEventListener('mouseenter', () => {
-        video.muted = true;
-        video.play().catch(() => {});
+        if (video.paused) {
+          video.play().catch(() => {});
+        }
       });
     }
   });
+
+  // Optimize all images for async decoding and fast loading without quality loss
+  document.querySelectorAll('img').forEach(img => {
+    img.decoding = 'async';
+  });
 }
 
-/* Page Preloader */
+/* Instant Preloader Dismissal */
 function initPreloader() {
-  if (!document.getElementById('page-preloader')) {
+  const preloader = document.getElementById('page-preloader');
+  if (!preloader && document.querySelector('.preloader-spinner-wrap')) {
+    // Already in HTML
+  } else if (!preloader) {
     const preloader = document.createElement('div');
     preloader.id = 'page-preloader';
     preloader.innerHTML = `
@@ -110,16 +115,16 @@ function initPreloader() {
       loader.classList.add('fade-out');
       setTimeout(() => {
         if (loader.parentNode) loader.parentNode.removeChild(loader);
-      }, 600);
+      }, 300);
     }
   };
 
-  if (document.readyState === 'complete') {
-    setTimeout(hidePreloader, 600);
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    setTimeout(hidePreloader, 50);
   } else {
-    window.addEventListener('load', () => setTimeout(hidePreloader, 600));
-    // Fallback safety
-    setTimeout(hidePreloader, 2000);
+    window.addEventListener('DOMContentLoaded', () => setTimeout(hidePreloader, 50));
+    window.addEventListener('load', () => setTimeout(hidePreloader, 50));
+    setTimeout(hidePreloader, 400);
   }
 }
 
