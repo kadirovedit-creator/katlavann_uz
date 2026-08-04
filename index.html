@@ -43,13 +43,10 @@
   </nav>
 
   <!-- HERO SECTION WITH FULL VIDEO BACKGROUND -->
-  <section class="hero hero-video-bg-section" style="position: relative; min-height: 85vh; padding: 100px 0 90px; color: #FFFFFF; display: flex; align-items: center; overflow: hidden; background: #0F172A;">
+  <section class="hero hero-video-bg-section" style="position: relative; min-height: 60vh; padding: 90px 0 75px; color: #FFFFFF; display: flex; align-items: center; overflow: hidden; background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%); border-bottom: 1px solid rgba(255,255,255,0.08);">
     
-    <!-- Background Video Element -->
-    <video id="heroBgVideo" src="obektlar/kumishkon.mp4" autoplay loop muted playsinline poster="images/hero_kobelco.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 120%; object-fit: cover; z-index: 1; transition: transform 0.1s linear, opacity 0.5s ease;"></video>
-    
-    <!-- Dark Gradient Overlay for High Readability -->
-    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.72) 50%, rgba(15, 23, 42, 0.86) 100%); z-index: 2;"></div>
+    <!-- Ambient Radial Glow Accent -->
+    <div style="position: absolute; top: -30%; left: 50%; transform: translateX(-50%); width: 800px; height: 500px; background: radial-gradient(circle, rgba(15, 167, 166, 0.25) 0%, rgba(15, 23, 42, 0) 70%); pointer-events: none; z-index: 1;"></div>
 
     <div class="container" style="position: relative; z-index: 3; width: 100%;">
       
@@ -77,29 +74,6 @@
             <i class="fa-solid fa-film"></i> Obyektlarni ko'rish
           </a>
         </div>
-
-        <!-- Minimalist Video Playlist Switcher -->
-        <div style="margin-top: 32px; background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.14); padding: 14px 20px; border-radius: 18px; max-width: 600px; margin-left: auto; margin-right: auto;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-            <span style="font-size: 0.84rem; color: rgba(255, 255, 255, 0.85); font-weight: 700; display: flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-play" style="color: var(--primary); font-size: 0.75rem;"></i> Avto Video Karusel:
-            </span>
-            <span style="font-size: 0.75rem; color: #2DD4BF; font-weight: 600; display: flex; align-items: center; gap: 4px;">
-              <i class="fa-solid fa-rotate"></i> (6 sek)
-            </span>
-          </div>
-          
-          <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
-            <button class="hero-video-switcher active" data-video="obektlar/kumishkon.mp4" style="background: var(--primary); color: #FFF; border: none; padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">01</button>
-            <button class="hero-video-switcher" data-video="obektlar/bektemir.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">02</button>
-            <button class="hero-video-switcher" data-video="obektlar/kokcha.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">03</button>
-            <button class="hero-video-switcher" data-video="obektlar/oq tepa.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">04</button>
-            <button class="hero-video-switcher" data-video="obektlar/ozbefilim.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">05</button>
-            <button class="hero-video-switcher" data-video="obektlar/sergili.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">06</button>
-            <button class="hero-video-switcher" data-video="videos/kirish.mp4" style="background: rgba(255,255,255,0.12); color: #FFF; border: 1px solid rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.82rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease;">07</button>
-          </div>
-        </div>
-
       </div>
 
     </div>
